@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omifood Hero Section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: "Rubik", sans-serif;
+        color: #444;
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 1200px;
+      }
+
+      header {
+        /* vw -> viewport width  */
+        /* vh (viewport height) -> 100% of the viewport  */
+        height: 100vh;
+        position: relative;
+        /* gradient is on top of the image  */
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(hero.jpg);
+        background-size: cover;
+        color: white;
+      }
+
+      nav {
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 32px;
+        /* how linear gradient works  */
+        /* background-image: linear-gradient(to right, red, blue); */
+      }
+
+      .header-container {
+        width: 1200px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        /* in relation to the element size  */
+        transform: translate(-50%, -50%);
+
+        /* text-align: center; */
+      }
+
+      h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+      }
+
+      .header-container-inner {
+        /* in relation to the parent element  */
+        width: 50%;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 48px;
+      }
+
+      .btn:link,
+      .btn:visited {
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #e67e22;
+        color: white;
+        text-decoration: none;
+
+        display: inline-block;
+        padding: 16px 32px;
+        border-radius: 9px;
+      }
+
+      h2 {
+        font-size: 44px;
+        margin-bottom: 48px;
+      }
+
+      section {
+        padding: 96px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div>LOGO</div>
+        <div>NAVIGATION</div>
+      </nav>
+
+      <div class="container header-container">
+        <div class="header-container-inner">
+          <h1>A healthy mean delivered to your door every single deal</h1>
+          <p>
+            The smart 365-days per year food subscription that will make you eat
+            healthy again. Tailored to your personal tastes and nutrional needs!
+          </p>
+          <a href="#" class="btn">Start eating well</a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <h2>Some random heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          debitis, expedita quo sapiente error accusamus mollitia quod illum ex
+          nisi ipsa ratione dolorum provident sequi accusantium vitae impedit
+          magni corporis! Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Similique aliquam harum animi ratione quibusdam vitae quam ipsam
+          quae explicabo fugit iure totam rerum obcaecati minima eius
+          consequatur quos, natus alias!
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

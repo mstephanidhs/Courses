@@ -1,0 +1,276 @@
+/* selects every single element of the page  */
+* {
+  /* border-top: 10px solid #1098ad; */
+  margin: 0;
+  padding: 0;
+}
+
+/* any property will get overwritten by a rule that has a different value for the specific property, properties that usually get inherited are the ones related to text  */
+body {
+  color: #444;
+  font-family: sans-serif;
+
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
+.container {
+  width: 800px;
+  /* both margin should be the same, automatically calculated by the browser */
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* shorthand expression  */
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  /* shorthand expression */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 80px; */
+}
+
+nav {
+  font-size: 18px;
+  text-align: center;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  /* width, style and color */
+  border: 5px solid #1098ad;
+  /* padding top and bottom  */
+  padding: 50px 0;
+  width: 500px;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  /* size of the text  */
+  font-size: 26px;
+  /* turn the text into uppercase, capitalize etc  */
+  text-transform: uppercase;
+  /* set the style of the text e.g. italic */
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  /* the space between the lines */
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  /* display: inline; */
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* selects all the p elements that are inside in the footer element, not always a good practise */
+/* footer p {
+  font-size: 16px;
+} */
+
+#copyright {
+  font-size: 16px;
+}
+
+/* a descendant inside a descendant, not also a good idea, better to use classes or id's */
+/* article header p {
+  font-style: italic;
+} */
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+/* body { */
+/* except from the elements we have specifally set a different bakcground color  */
+/* background-color: blue; */
+/* } */
+
+/* instead of doing that, we can use pseudo classes  (down below)*/
+/* .first-li {
+  font-weight: bold;
+} */
+
+/* perfect for ol or ul that have the same li tags  */
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+/* all the odd elements will be coloured */
+/* li:nth-child(odd) { */
+/* color: red; */
+/* } */
+
+/* does not really work, the paragraph has to be the first child of the article  */
+/* article p:first-child */
+/* article p:last-child {
+  color: red;
+} */
+
+/* target all the a elements with the href attribute  */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  /* decoration style and color (or ommit the second attribute so it understands that the next is about the color */
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+.post-img {
+  width: 100%;
+  /* we do it only if the one of the dimensions is specified in the html file, otherwise it will be auto anyway */
+  height: auto;
+  /* margin: 100px; */
+}
+
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+
+  margin-right: 30px;
+  /* nothing will change, so I use inline-block display  */
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* visually maybe it changes nothing, but it's important to do so */
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* h2::first-letter {
+  font-size: 80px;
+} */
+
+/* adjacent sibling selector  */
+/* h3 + p::first-line {
+  color: red;
+} */
+
+h2 {
+  position: relative;
+}
+
+/* it's an inline element, after -> the very last element on the contrary of the before keyword */
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+  color: #444;
+}
+
+/* Resolving conflicts */
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+/* should never use important keyword  */
+footer p {
+  color: green !important;
+}

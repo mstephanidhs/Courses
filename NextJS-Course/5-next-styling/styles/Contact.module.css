@@ -1,0 +1,5 @@
+/* styles are only applied to a component level */
+/* css modules won't collide  with global classname */
+.highlight {
+  color: blue;
+}
