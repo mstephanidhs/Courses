@@ -1,4 +1,4 @@
-# WEB-Courses
+# Courses
 
 Various courses that I have completed/certifications that I have earned.
 
