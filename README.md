@@ -1,6 +1,6 @@
 # Courses
 
-Various courses that I have completed/certifications that I have earned.
+My completion of various courses throughout the years.
 
 | Course Name | Site |
 | ------------- | ------------- |
