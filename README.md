@@ -13,4 +13,5 @@ My completion of various courses throughout the years.
 | Python-Course | [The Complete Python Bootcamp From Zero to Hero in Python](https://www.udemy.com/course/complete-python-bootcamp/)
 | Figma Essentials | [Figma UI UX Design Essentials](https://www.udemy.com/course/figma-ux-ui-design-user-experience-tutorial-course/)
 | Java Course | [Java from Zero to First Job, Practical Guide, 2000+ examples](https://www.udemy.com/course/java-development-for-beginners-learnit/)
+| Meta Frontend Course | [Meta Front-End Developer Professional Certificate](https://www.coursera.org/professional-certificates/meta-front-end-developer)
  
