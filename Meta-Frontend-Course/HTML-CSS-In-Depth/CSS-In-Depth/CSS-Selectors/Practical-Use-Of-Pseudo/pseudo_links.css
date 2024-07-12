@@ -1,0 +1,21 @@
+* {
+    font-family: cursive;
+    background-color: #e0e0e2;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: white;
+    background-color: black;
+}
