@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+corpo {
+    colore di sfondo: mandorla sbiancata;
+    margine: 3rem 5%;
+    colore: #333;
+    famiglia di caratteri: 'Ubuntu', sans-serif;
+}
+
+h2, h3 {
+    peso del carattere: 700;
+    decorazione del testo: sottolineato;
+    margine inferiore: 1rem;
+}
+
+intestazione > img {
+    blocco di visualizzazione;
+    margine: 0 automatico;
+    larghezza massima: 50%;
+}
+
+nav ul {
+    stile elenco: nessuno;
+    allineamento del testo: centro;
+    imbottitura: 0;
+}
+
+UN {
+  colore: ereditare;
+  decorazione del testo: nessuna;
+}
+
+UN {
+  sfondo:
+    gradiente lineare(
+      a destra,
+      rgba(100, 200, 200, 1),
+      rgb(100, 200, 200, 1)
+    ),
+    gradiente lineare(
+      a destra,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgb(0, 100, 200, 1)
+  );
+  dimensione sfondo: 100% 3px, 0 3px;
+  posizione-sfondo: 100% 100%, 0 100%;
+  background-repeat: nessuna ripetizione;
+  transizione: dimensione sfondo 400 ms;
+}
+
+a:passa il mouse sopra {
+  dimensione sfondo: 0 3px, 100% 3px;
+}
+
+nav li {
+    visualizzazione: blocco in linea;
+    margine: 0 1rem;
+}
+
+sezione {
+    visualizzazione: flessibile;
+    spazio: 1rem;
+    flex-wrap: avvolgere;
+}
+
+articolo {
+    flessibilitΓ : 1;
+    margine inferiore: 1rem;
+    bordo: 3px solido cadetblue;
+    imbottitura: 0,5rem;
+    raggio del bordo: 30px;
+    colore di sfondo: azzurro;
+    allineamento del testo: centro;
+}
+
+.contenitore {
+    larghezza massima: 1200px;
+    margine: 0 automatico;
+    imbottitura: 1,5em;
+  }
+  
+  .menΓΉ {
+    famiglia di caratteri: sans-serif;
+    dimensione carattere: 14px;
+  }
+  
+  .intestazione-gruppo-menu {
+    margine: 0;
+    imbottitura inferiore: 1em;
+    bordo inferiore: 2px solido #ccc;
+  }
+  
+  .gruppo-menu {
+    visualizzazione: griglia;
+    colonne-del-modello-di-griglia: 1fr;
+    spazio: 1,5em;
+    imbottitura: 1,5em 0;
+  }
+  
+  .elemento del menu {
+    visualizzazione: flessibile;
+  }
+  
+  .elemento-menu-img {
+    larghezza: 80px;
+    altezza: 80px;
+    flessione-restringimento: 0;
+    oggetto-adatto: coprire;
+    margine destro: 1,5em;
+  }
+  
+  .testo-voce-menu {
+    crescita flessibile: 1;
+  }
+  
+  .intestazione-voce-menu {
+    visualizzazione: flessibile;
+    giustifica-contenuto: spazio-tra;
+    margine: 0;
+  }
+  
+  .nome-voce-menu {
+    margine destro: 1,5em;
+  }
+  
+  .desc-voce-di-menu {
+    altezza della riga: 1.6;
+    allineamento del testo: a sinistra;
+  }
+
+piΓ¨ di pagina {
+    visualizzazione: flessibile;
+    giustifica-contenuto: spazio-tra;
+    align-items: centro;
+    imbottitura: 1rem 0;
+    bordo superiore: 1px solido #ccc;
+}
+
+piΓ¨ di pagina div {
+    allineamento del testo: centro;
+}
+
+#ristorante {
+    larghezza: 200px;
+    altezza: automatica;
+    raggio del bordo: 20px;
+}
+
+#capocuoco
+    larghezza: 100px;
+    altezza: automatica;
+    raggio del bordo: 20px;
+}
+
+.logo-footer {
+    larghezza: 80px;
+    altezza: automatica;
+}
+
+#nome {
+    raggio del bordo: 5px;
+    bordo: 1px solido #ccc;
+    ombra della scatola: 1px 1px 1px #999;
+}
+
+#e-mail {
+    raggio del bordo: 5px;
+    bordo: 1px solido #ccc;
+    ombra della scatola: 1px 1px 1px #999;
+}
+
+#invia {
+  raggio del bordo: 5px;
+  bordo: 1px solido #ccc;
+  ombra della scatola: 1px 1px 1px #999;
+}
+
+area di testo {
+  imbottitura: 10px;
+  larghezza massima: 100%;
+  altezza della riga: 1.5;
+  raggio del bordo: 5px;
+  bordo: 1px solido #ccc;
+  ombra della scatola: 1px 1px 1px #999;
+}
+
+etichetta {
+  blocco di visualizzazione;
+  margine inferiore: 10px;
+}
+
+pulsante {
+    raggio del bordo: 5px;
+    bordo: 1px solido #ccc;
+    ombra della scatola: 1px 1px 1px #999;
+}
+
+
+@media (larghezza massima: 768px) {
+    sezione {
+        direzione-flessibile: colonna;
+    }
+
+    nav li {
+        blocco di visualizzazione;
+        margine: 0,5rem 0;
+    }
+
+    piΓ¨ di pagina {
+        direzione-flessibile: colonna;
+    }
+}
