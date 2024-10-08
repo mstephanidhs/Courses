@@ -1,0 +1,18 @@
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex: 1;
+    gap: 3rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.navbar ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -1,0 +1,44 @@
+.highlights {
+    margin: 10rem 12rem 0 12rem;
+}
+
+.highlights-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+
+.highlights-title h1 {
+    font-size: 36px;
+}
+
+.online-menu {
+    background-color: #F4CE14;
+    border-radius: 16px;
+    border: none;
+
+    font-weight: bold;
+    font-size: 18px;
+
+    height: 46px;
+    width: 175px;
+
+    transition-duration: 0.2s;
+
+    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.online-menu:hover {
+    cursor: pointer;
+    background-color: #495E57;
+    color: white;
+}
+
+.cards {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}

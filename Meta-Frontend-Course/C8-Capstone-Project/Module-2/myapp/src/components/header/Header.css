@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 1rem;
+
+    background-color: white;
+    height: 14vh;
+}
+
+img:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,64 @@
+.hero-section {
+    background-color: #495E57;
+    height: 60vh;
+
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    flex: 1;
+}
+
+section .hero-content {
+    align-self: center;
+}
+
+section .hero-content h1 {
+    color: #F4CE14;
+    font-size: 48px;
+    margin: 0;
+}
+
+section .hero-content h4 {
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+}
+
+section .hero-content p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 2%;
+
+    width: 330px;
+}
+
+section .hero-content button {
+    background-color: #F4CE14;
+    border-radius: 16px;
+    border: none;
+
+    font-weight: bold;
+    font-size: 18px;
+
+    height: 46px;
+    width: 175px;
+    margin-top: .4rem;
+
+    transition-duration: 0.2s;
+}
+
+section .hero-content button:hover {
+    cursor: pointer;
+    border: 3px solid #F4CE14;
+    background-color: #495E57;
+    color: white;
+}
+
+section .hero-image img {
+    width: 110%;
+    height: 105%;
+    border-radius: 16px;
+    margin-top: 2rem;
+}
