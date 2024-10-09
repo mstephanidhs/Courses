@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex: 1;
 }
 
 .highlights-title h1 {
