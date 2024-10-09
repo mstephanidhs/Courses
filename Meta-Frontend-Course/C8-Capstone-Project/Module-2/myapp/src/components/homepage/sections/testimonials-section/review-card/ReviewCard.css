@@ -25,9 +25,13 @@
 }
 
 .review-img-stars img {
-    width: 70px;
+    /* width: 70px;
     height: 80px;
-    border-radius: 8px;
+    border-radius: 8px; */
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .review-img-stars .stars .star {

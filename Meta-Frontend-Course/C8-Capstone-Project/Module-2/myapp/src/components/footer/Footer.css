@@ -1,0 +1,52 @@
+.footer {
+    margin-top: 8rem;
+    padding: 4rem 0 0 0;
+    background-color: #495E57;
+    height: 60vh;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid--footer {
+    grid-template-columns: repeat(4, 1fr) min-content;
+}
+
+.footer-img {
+    height: 22rem;
+    width: 14rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.footer-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: .5px;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #dfdddd;
+}
+
+.address-details {
+    color: white;
+}

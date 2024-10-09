@@ -1,0 +1,53 @@
+.about-section {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+
+    margin-top: 16rem;
+    margin-right: 15%;
+}
+
+.about-section .about-section-details {
+    margin-top: -4rem;
+}
+
+.about-section .about-section-details h1 {
+    font-size: 40px;
+    color: #495E57;
+    margin: 0;
+}
+
+.about-section .about-section-details h4 {
+    font-size: 22px;
+    color: #DB5D17;
+    margin: 0 0 1.5rem 0;
+}
+
+.about-section .about-section-details p {
+    width: 345px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.about-section .about-section-images .img {
+    width: 22rem;
+    height: 26rem;
+    border: 3px solid black;
+    object-fit: cover;
+}
+
+.about-section .about-section-images {
+    position: relative;
+}
+
+.about-section .about-section-images .img-1 {
+    position: relative;
+}
+
+.about-section .about-section-images .img-2 {
+    position: absolute;
+    bottom: 30%;
+    left: 75%;
+}
+

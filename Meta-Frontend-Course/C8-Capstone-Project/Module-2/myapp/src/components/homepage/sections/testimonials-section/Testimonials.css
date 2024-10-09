@@ -1,8 +1,8 @@
 .testimonials {
-    background-color: #C5B09B;
-    margin-top: 3rem;
+    background-color: #ffefdf;
+    margin-top: 5rem;
 
-    height: 65vh;
+    height: 75vh;
 }
 
 .testimonials .testimonials-title {
@@ -10,6 +10,7 @@
     text-align: center;
     padding-top: 4rem;
     letter-spacing: 1px;
+    font-weight: 600;
 }
 
 .review-cards {
