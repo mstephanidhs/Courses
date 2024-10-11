@@ -1,0 +1,66 @@
+.confirm-booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.confirm-booking-title {
+    font-size: 2.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.confirm-booking-text {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.confirmation-details {
+    background-color: #495E57;
+    width: 28rem;
+    height: 19rem;
+    border-radius: 16px;
+    margin-top: 2rem;
+}
+
+.confirmation-details-content {
+    margin-left: 2rem;
+}
+
+.confirmation-details-title {
+    color: #F4CE14;
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 2rem 0 2rem 0;
+}
+
+.confirmation-details-content p {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.confirmation-details-content p span {
+    font-weight: bold;
+}
+
+.confirmation-booking-button {
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #F4CE14;
+    font-weight: bold;
+    font-size: 1.125rem;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 8px;
+}
+
+.confirmation-booking-button:hover {
+    cursor: pointer;
+    background-color: #dfba01;
+}

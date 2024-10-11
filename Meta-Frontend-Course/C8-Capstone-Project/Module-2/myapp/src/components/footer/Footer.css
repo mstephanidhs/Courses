@@ -1,8 +1,14 @@
 .footer {
     margin-top: 8rem;
-    padding: 4rem 0 0 0;
     background-color: #495E57;
-    height: 60vh;
+    height: 32rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
 }
 
 .grid {
@@ -10,7 +16,8 @@
 }
 
 .grid--footer {
-    grid-template-columns: repeat(4, 1fr) min-content;
+    grid-template-columns: min-content repeat(3, 1fr);
+    column-gap: 8rem;
 }
 
 .footer-img {
@@ -21,7 +28,7 @@
 }
 
 .footer-heading {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     color: white;
     letter-spacing: .5px;
@@ -49,4 +56,27 @@
 
 .address-details {
     color: white;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ebebeb;
+    font-size: 0.75rem;
+    font-style: italic;
+    gap: .2rem;
+
+    letter-spacing: .2px;
+
+    padding: 1rem 0;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.copyright p {
+    margin: 0;
 }

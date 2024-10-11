@@ -1,0 +1,95 @@
+.booking-section {
+  width: 38rem;
+  height: 44rem;
+  border-radius: 16px;
+  margin: 2rem auto 0;
+  border: 5px solid #495E57;
+}
+
+.booking-title {
+  color: #495e57;
+  font-size: 2rem;
+  margin: 0;
+  padding-top: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-fields {
+  margin: 3rem 0 0 6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field {
+  width: 25rem;
+  height: 3rem;
+
+  border: none;
+  background-color: #e5e5e5;
+  color: #495E57;
+  font-weight: 600;
+  letter-spacing: .5px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+}
+
+.form-buttons {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+input[type='date'],
+input[type='number'],
+select {
+  padding-left: 1rem;
+}
+
+.button {
+    width: 9rem;
+    height: 3rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.cancel-button {
+    background-color: #F4CE14;
+    color: black;
+    border: none;
+}
+
+.cancel-button:hover {
+    cursor: pointer;
+    background-color: #dfba01;
+}
+
+.submit-button {
+    background-color: #495E57;
+    color: white;
+    border: none;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    background-color: #32413c;
+}
+
+.field-error {
+    color: red;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+

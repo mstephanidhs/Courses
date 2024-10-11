@@ -1,5 +1,5 @@
 .highlights {
-    margin: 10rem 12rem 0 12rem;
+    margin: 8rem 12rem 0 12rem;
 }
 
 .highlights-title {
@@ -18,10 +18,10 @@
     border: none;
 
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.125rem;
 
-    height: 46px;
-    width: 175px;
+    height: 2.9rem;
+    width: 11rem;
 
     transition-duration: 0.2s;
 
@@ -30,8 +30,7 @@
 
 .online-menu:hover {
     cursor: pointer;
-    background-color: #495E57;
-    color: white;
+    background-color: #dfba01;
 }
 
 .cards {

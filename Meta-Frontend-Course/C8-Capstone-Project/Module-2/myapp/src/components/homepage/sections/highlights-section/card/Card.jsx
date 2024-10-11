@@ -1,9 +1,16 @@
 import './Card.css';
+import placeholderimg from '../../../../../assets/placeholder.svg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function Card({ pathToPhoto, title, price, text }) {
   return (
     <div className='card-item'>
-      <img src={pathToPhoto} alt='Food dish' />
+      <LazyLoadImage
+        src={pathToPhoto}
+        alt='Food dish'
+        placeholderSrc={placeholderimg}
+        effect='blur'
+      />
       <div className='card-rest-info'>
         <div className='card-details'>
           <h2 className='card-title'>{title}</h2>
@@ -11,7 +18,7 @@ function Card({ pathToPhoto, title, price, text }) {
         </div>
         <p className='card-text'>{text}</p>
         <p className='card-ref'>
-          <a href='/'>Order a delivery {String.fromCharCode(8594)}</a>
+          <a aria-label='Order a delivery' href='/'>Order a delivery {String.fromCharCode(8594)}</a>
         </p>
       </div>
     </div>

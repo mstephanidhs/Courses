@@ -1,5 +1,7 @@
 import './Footer.css';
 
+import placeholderimg from '../../assets/placeholder.svg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import restaurant from '../../assets/restaurant.jpg';
 
 function Footer() {
@@ -7,7 +9,13 @@ function Footer() {
     <footer className='footer'>
       <div className='container grid grid--footer'>
         <div className='logo-col'>
-          <img src={restaurant} alt='restaurant' className='footer-img' />
+          <LazyLoadImage
+            placeholderSrc={placeholderimg}
+            effect='blur'
+            src={restaurant}
+            alt='restaurant'
+            className='footer-img'
+          />
         </div>
 
         <nav className='nav-col'>
@@ -81,6 +89,10 @@ function Footer() {
             </li>
           </ul>
         </nav>
+      </div>
+      <div className='copyright'>
+        <span>Developed by Marios Stefanidis.</span>
+        <p>© 2024 Little Lemon. All rights reserved.</p>
       </div>
     </footer>
   );

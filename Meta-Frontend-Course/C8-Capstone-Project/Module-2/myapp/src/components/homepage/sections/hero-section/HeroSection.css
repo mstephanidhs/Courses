@@ -1,9 +1,9 @@
 .hero-section {
     background-color: #495E57;
-    height: 60vh;
+    height: 25rem;
 
     display: flex;
-    gap: 4rem;
+    gap: 8rem;
     justify-content: center;
     flex: 1;
 }
@@ -14,24 +14,25 @@ section .hero-content {
 
 section .hero-content h1 {
     color: #F4CE14;
-    font-size: 48px;
+    font-size: 3rem;
     margin: 0;
 }
 
 section .hero-content h4 {
     color: white;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 600;
-    margin: 0;
+    margin: 0 0 2rem 0;
 }
 
 section .hero-content p {
-    font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 28px;
     letter-spacing: 2%;
 
-    width: 330px;
+    color: #ebebeb;
+
+    width: 20rem;
 }
 
 section .hero-content button {
@@ -40,20 +41,20 @@ section .hero-content button {
     border: none;
 
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.125rem;
 
     height: 46px;
-    width: 175px;
-    margin-top: .4rem;
+    width: 11rem;
+    object-fit: cover;
+    margin-top: 1rem;
 
     transition-duration: 0.2s;
 }
 
 section .hero-content button:hover {
+    background-color: #dfba01;
     cursor: pointer;
-    border: 3px solid #F4CE14;
-    background-color: #495E57;
-    color: white;
+
 }
 
 section .hero-image img {

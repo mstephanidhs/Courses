@@ -1,8 +1,8 @@
 .review-card {
     background-color: white;
     border-radius: 16px;
-    width: 260px;
-    height: 250px;
+    width: 16rem;
+    height: 15.5rem;
 
     box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.2);
 
@@ -25,9 +25,6 @@
 }
 
 .review-img-stars img {
-    /* width: 70px;
-    height: 80px;
-    border-radius: 8px; */
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
@@ -35,18 +32,17 @@
 }
 
 .review-img-stars .stars .star {
-    width: 10px;
-    height: 10px;
+    width: 0.625rem;
+    height: 0.625rem;
 }
 
 .review-details-title {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .review-details .review {
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 18px;
-    width: 200px;
-    text-overflow: ellipsis;
+    width: 12.5rem;
 }

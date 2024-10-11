@@ -12,19 +12,19 @@
 }
 
 .about-section .about-section-details h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #495E57;
     margin: 0;
 }
 
 .about-section .about-section-details h4 {
-    font-size: 22px;
+    font-size: 1.4rem;
     color: #DB5D17;
     margin: 0 0 1.5rem 0;
 }
 
 .about-section .about-section-details p {
-    width: 345px;
+    width: 21.5rem;
     font-weight: lighter;
     letter-spacing: 1px;
     line-height: 24px;

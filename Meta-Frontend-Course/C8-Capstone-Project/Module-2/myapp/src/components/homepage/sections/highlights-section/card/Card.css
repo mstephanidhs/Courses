@@ -1,18 +1,24 @@
 .card-item {
     background-color: #f0f0f0;
-    width: 280px;
-    height: 400px;
+    width: 17.5rem;
+    height: 25rem;
 
     display: flex;
     flex-direction: column;
 
     border-radius: 8px;
-
-    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25 );
+    /* box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
 
     position: relative;
-
     margin-bottom: 2rem;
+
+    transition: all 0.4s;
+}
+
+.card-item:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
 }
 
 .card-rest-info {
@@ -34,19 +40,19 @@
 }
 
  .card-title {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
 }
 
 .price {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     color: #DB5D17;
 }
 
 .card-text {
-    font-size: 14px;
-    width: 230px;
+    font-size: 0.875rem;
+    width: 14.5rem;
     line-height: 20px;
     letter-spacing: 2%;
     margin: 0;
@@ -58,7 +64,7 @@
 }
 
 .card-ref a {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     color: black;
     text-decoration: none;
