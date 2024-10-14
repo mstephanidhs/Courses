@@ -2,8 +2,11 @@
     display: flex;
     flex-direction: row;
     list-style: none;
-    flex: 1;
     gap: 3rem;
+}
+
+.navbar {
+    position: relative;
 }
 
 .navbar ul li a {
@@ -15,4 +18,38 @@
 .navbar ul li:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.burger-bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        width: 200px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .burger-menu {
+        cursor: pointer;
+        display: block;
+    }
 }

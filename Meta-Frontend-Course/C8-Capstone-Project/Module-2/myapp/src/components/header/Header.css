@@ -12,3 +12,10 @@
 img:hover {
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    .header {
+        justify-content: space-between;
+        padding: 0 4rem;
+    }
+}
