@@ -1,42 +1,75 @@
 .highlights {
-    margin: 8rem 12rem 0 12rem;
+  margin: 8rem auto 0;
+  max-width: 1200px;
+  padding: 0 2rem;
 }
 
 .highlights-title {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .highlights-title h1 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .online-menu {
-    background-color: #F4CE14;
-    border-radius: 16px;
-    border: none;
+  background-color: #f4ce14;
+  border-radius: 16px;
+  border: none;
 
-    font-weight: bold;
-    font-size: 1.125rem;
+  font-weight: bold;
+  font-size: 1.125rem;
 
-    height: 2.9rem;
-    width: 11rem;
+  height: 2.9rem;
+  width: 11rem;
 
-    transition-duration: 0.2s;
+  transition-duration: 0.2s;
 
-    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .online-menu:hover {
-    cursor: pointer;
-    background-color: #dfba01;
+  cursor: pointer;
+  background-color: #dfba01;
 }
 
 .cards {
-    margin-top: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .highlights {
+    margin: 4rem auto 0;
+    padding: 0 1rem;
+  }
+
+  .highlights-title {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .highlights-title h1 {
+    margin-bottom: 1rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cards > * {
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
