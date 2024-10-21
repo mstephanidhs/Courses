@@ -33,7 +33,7 @@ const Search = React.memo((props) => {
   useEffect(() => {
     if (!isLoading && !error && data) {
       const loadedIngredients = [];
-      for (const key in responseData) {
+      for (const key in data) {
         loadedIngredients.push({
           id: key,
           title: data[key].title,

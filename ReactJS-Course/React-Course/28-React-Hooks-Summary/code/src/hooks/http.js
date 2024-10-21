@@ -16,7 +16,6 @@ const httpReducer = (curHttpState, action) => {
         error: null,
         data: null,
         extra: action.extra,
-        extra: null,
         identifier: action.identifier,
       };
     case "RESPONSE":
