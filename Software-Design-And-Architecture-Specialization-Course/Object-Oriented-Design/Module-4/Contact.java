@@ -33,6 +33,11 @@ public class Contact {
         return Object.equals(username, otherContact.username) && Object.equals(email, otherContact.email) && Object.equals(id, otherContact.id);
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(username, email, id);
+    }
+
     public void setId() {
         this.id = UUID.randomUUID().toString();
     }
