@@ -14,3 +14,4 @@ My completion of various courses throughout the years.
 | Figma Essentials Course | [Figma UI UX Design Essentials](https://www.udemy.com/course/figma-ux-ui-design-user-experience-tutorial-course/)
 | Meta Frontend Course | [Meta Front-End Developer Professional Certificate](https://www.coursera.org/professional-certificates/meta-front-end-developer)
 | Software Design and Architecture Course | [Software Design and Architecture Specialization](https://www.coursera.org/specializations/software-design-architecture?)
+| Typescript Course | [Learn Typescript](https://www.coursera.org/learn/learn-typescript)
