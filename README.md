@@ -13,3 +13,4 @@ My completion of various courses throughout the years.
 | Python Course | [The Complete Python Bootcamp From Zero to Hero in Python](https://www.udemy.com/course/complete-python-bootcamp/)
 | Figma Essentials Course | [Figma UI UX Design Essentials](https://www.udemy.com/course/figma-ux-ui-design-user-experience-tutorial-course/)
 | Meta Frontend Course | [Meta Front-End Developer Professional Certificate](https://www.coursera.org/professional-certificates/meta-front-end-developer)
+| Typescript Course | [Learn Typescript](https://www.coursera.org/learn/learn-typescript)
