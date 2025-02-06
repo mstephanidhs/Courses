@@ -1,0 +1,11 @@
+/* What can you do here to make sure the divs take up the same space? */
+
+body{
+    display:table;
+}
+
+div{
+    width:30%;
+    background:#00ffff;
+    display:table-cell;
+  }
