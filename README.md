@@ -14,3 +14,4 @@ My completion of various courses throughout the years.
 | Meta Frontend Course | [Meta Front-End Developer Professional Certificate](https://www.coursera.org/professional-certificates/meta-front-end-developer)
 | Advanced Javascript Course | [Advanced Javascript Specialization](https://www.coursera.org/specializations/advanced-javascript)
 | Web Design of Everybody - University of Michigan | [Web Design for Everybody: Basics of Web Development & Coding Specialization](https://www.coursera.org/specializations/web-design?)
+| CSS Advanced Course | [CSS Specialization](https://www.coursera.org/specializations/css)
