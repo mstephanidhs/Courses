@@ -1,0 +1,46 @@
+.box {
+  width: 50px;
+  height: 50px;
+  background: red;
+  border: 1px solid black;
+  /* name of the animation wanna use */
+  animation-name: grow;
+  /* how long the animation runs for */
+  animation-duration: 2s;
+  /* delay before the animation start on page load */
+  animation-delay: 1s;
+  /* how many times the animation is going to run */
+  animation-iteration-count: infinite;
+}
+
+@keyframes grow {
+  0% {
+    width: 50px;
+    height: 50px;
+    background: red;
+  }
+  50% {
+    width: 100px;
+    height: 50px;
+    background: blue;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+    background: green;
+  }
+}
+
+/* Challenge */
+/* @keyframes grow {
+  from {
+    width: 100px;
+    height: 100px;
+    background: blue;
+  }
+  to {
+    width: 10px;
+    height: 10px;
+    background: red;
+  }
+} */
