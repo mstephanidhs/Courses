@@ -5,7 +5,7 @@ export const LargeBookListItem = ({ book }) => {
     <>
       <h2>{name}</h2>
       <p>{price}</p>
-      <h2>Title: </h2>
+      <h2>Title:</h2>
       <p>{title}</p>
       <p># of Pages: {pages}</p>
     </>
