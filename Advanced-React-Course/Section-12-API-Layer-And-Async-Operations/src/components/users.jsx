@@ -1,33 +1,21 @@
-import React, { useEffect, useState } from "react";
-import { fetchUser } from "../api/userApi";
-import styled from "styled-components";
-import { apiStatus } from "../constants/api-status";
-import { useApiStatus } from "../api/hooks/useApiStatus";
-import LazyLoader from "./lazy-loader";
+import React, { useEffect, useState } from 'react';
+import { fetchUser } from '../api/userApi';
+import styled from 'styled-components';
+import { apiStatus } from '../constants/api-status';
+import { useApiStatus } from '../api/hooks/useApiStatus';
+import LazyLoader from './lazy-loader';
+import { useApi } from '../api/hooks/useApi';
 
 const useFetchUsers = () => {
-  const [users, setUsers] = useState([]);
-  
   const {
-    status: fetchUserStatus,
-    setStatus: setFetchUserStatus,
+    data: users,
+    exec: initFetchUsers,
+    status: fetchUsersStatus,
     isIdle: isFetchUsersStatusIdle,
     isPending: isFetchUsersStatusPending,
     isError: isFetchUsersStatusError,
-    isSuccess: isFetchUsersStatusSuccess
-  } = useApiStatus(apiStatus.IDLE);
-
-  const initFetchUsers = async () => {
-    setFetchUserStatus(apiStatus.PENDING);
-    const {respose, error} = await withAsync(() => fetchUser());
-
-    if (error) {
-      setFetchUserStatus(apiStatus.ERROR);
-    } else if (respose) {
-      setFetchUserStatus(apiStatus.SUCCESS);
-      setUsers(response);
-    }
-  };
+    isSuccees: isFetchUsersStatusSuccess,
+  } = useApi(() => fetchUsersStatus().then((response) => response.data));
 
   return {
     users,
@@ -72,7 +60,11 @@ const FetchButton = styled.button`
 `;
 
 function Users() {
-  const { users, isFetchUsersStatusError, isFetchUsersStatusIdle, isFetchUsersStatusPending, isFetchUsersStatusSuccess, initFetchUsers } = useFetchUsers();
+  const {
+    users,
+    isFetchUsersStatusPending,
+    initFetchUsers,
+  } = useFetchUsers();
 
   useEffect(() => {
     initFetchUsers();
@@ -80,8 +72,14 @@ function Users() {
 
   return (
     <Container>
-      <FetchButton onClick={initFetchUsers}>{isFetchUsersStatusPending ? 'Loading...' : 'Fetch Users'}</FetchButton>
-      <LazyLoader show={isFetchUsersStatusPending} delay={500} default="Fetch Users"/>
+      <FetchButton onClick={initFetchUsers}>
+        {isFetchUsersStatusPending ? 'Loading...' : 'Fetch Users'}
+      </FetchButton>
+      <LazyLoader
+        show={isFetchUsersStatusPending}
+        delay={500}
+        default='Fetch Users'
+      />
       <FlexContainer>
         <ContentContainer>
           {users
