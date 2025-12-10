@@ -1,0 +1,92 @@
+.counter-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+  gap: 2rem;
+  padding: 1rem; 
+  background-color: #f9f9f9; 
+  border: 4px solid #ff6347; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+.counter-title {
+  font-size: 1.8rem; 
+  font-weight: bold;
+  color: #1d4ed8; 
+}
+
+.counter-value {
+  font-size: 7rem; 
+  color: #ff6347; 
+}
+
+.counter-buttons button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem; 
+  border: none;
+  background-color: #1d4ed8; 
+  color: #ffffff; /* White button text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.counter-buttons button:hover {
+  background-color: #2563eb; /* Slightly darker blue on hover */
+}
+
+.counter-buttons button:active {
+  background-color: #1a4bbb; /* Slightly darker blue on click */
+}
+
+.counter-form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.counter-input {
+  padding: 0.5rem;
+  border: 2px solid #1d4ed8; /* Blue input border */
+  border-radius: 0.5rem; 
+  font-size: 1rem;
+}
+
+.counter-input:focus {
+  outline: none;
+  border-color: #2563eb; /* Slightly darker blue border on focus */
+}
+
+.counter-input::-webkit-inner-spin-button,
+.counter-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.counter-input::-webkit-inner-spin-button:hover,
+.counter-input::-webkit-outer-spin-button:hover {
+  background-color: #1d4ed8; /* Blue button background color on spin button hover */
+  color: #ffffff; /* White button text color on spin button hover */
+}
+
+.update-button {
+  padding: 0.7rem 1.2rem; 
+  font-size: 1.2rem;
+  border: none;
+  background-color: #1d4ed8; /* Blue button background color */
+  color: #ffffff; /* White button text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.update-button:hover {
+  background-color: #2563eb; /* Slightly darker blue on hover */
+}
+
+.update-button:active {
+  background-color: #1a4bbb; /* Slightly darker blue on click */
+}
